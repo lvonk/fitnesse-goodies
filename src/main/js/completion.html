@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.autocomplete.js"></script>
+<script type="text/javascript" src="lib/jquery.bgiframe.min.js"></script>
+<script type="text/javascript" src="lib/jquery.dimensions.js"></script>
+<link rel="stylesheet" href="jquery.autocomplete.css" type="text/css" />
+
+<script type="text/javascript">                                         
+$(document).ready(function() {
+    var data = "command driver,login drived".split(",");
+	$("#example").autocomplete(data, {
+		multiple: true,
+		multipleSeparator: "\n",
+		formatResult: function(data, i, n) {
+			return "|" + data + "|";
+		}	
+	});
+  });
+
+ </script>
+</head>
+<body>
+<!-- we will add our HTML content here -->
+<textarea id="example"></textarea>
+</body>
+</html>

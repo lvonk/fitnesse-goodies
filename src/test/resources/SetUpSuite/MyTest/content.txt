@@ -1,0 +1,3 @@
+!|MyFixture|
+|first name|last name|valid?|
+|lars|vonk|false|
